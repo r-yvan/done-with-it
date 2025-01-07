@@ -17,6 +17,7 @@
   "dependencies": {
     "@expo-google-fonts/poppins": "^0.2.3",
     "@expo/vector-icons": "^14.0.4",
+    "@react-native-vector-icons/entypo": "^1.0.1",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
     "@tabler/icons-react-native": "^3.27.1",
@@ -40,6 +41,7 @@
     "react-native-reanimated": "~3.16.6",
     "react-native-safe-area-context": "4.12.0",
     "react-native-screens": "~4.4.0",
+    "react-native-vector-icons": "^10.2.0",
     "react-native-web": "~0.19.13",
     "react-native-webview": "13.12.5",
     "tailwindcss": "^3.4.17"

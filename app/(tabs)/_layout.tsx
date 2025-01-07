@@ -1,6 +1,6 @@
 import { View, Text } from "react-native";
 import React from "react";
-import { IconHome } from "@tabler/icons-react-native";
+import Icon from '@react-native-vector-icons/entypo';
 import { Tabs, Redirect } from "expo-router";
 
 const TabsLayout = () => {
@@ -14,7 +14,7 @@ const TabsLayout = () => {
             headerShown: false,
             tabBarIcon: ({ color, focused }) => (
               <View>
-                <IconHome size={20} color="#AAAAAA" />
+                <Icon name="link" size={30} color="#900" />
               </View>
             ),
           }}
