@@ -5,8 +5,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ["Geist"],
-     },
+        pregular: "Poppins-Regular",
+        pbold: "Poppins-Bold",
+        pthin: "Poppins-Thin",
+        plight: "Poppins-Light",
+        pextrabold: "Poppins-ExtraBold",
+      },
     },
   },
   plugins: [],

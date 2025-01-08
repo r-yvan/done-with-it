@@ -1,6 +1,5 @@
 import {
   ScrollView,
-  Image,
   Text,
   View,
   ImageBackground,
@@ -8,29 +7,40 @@ import {
 } from "react-native";
 import "../global.css";
 import { SafeAreaView } from "react-native-safe-area-context";
-
+import { useFonts } from "expo-font";
 export default function Index() {
+  useFonts({
+    "Poppins-Regular": require("@/assets/fonts/Poppins-Regular.ttf"),
+    "Poppins-Thin": require("@/assets/fonts/Poppins-Thin.ttf"),
+    "Poppins-Light": require("@/assets/fonts/Poppins-Light.ttf"),
+    "Poppins-Bold": require("@/assets/fonts/Poppins-Bold.ttf"),
+    "Poppins-ExtraBold": require("@/assets/fonts/Poppins-ExtraBold.ttf"),
+  });
   return (
     <SafeAreaView>
       <ScrollView>
-        <View className="flex bg-[#151515] w-full h-screen">
+        <View className="flex bg-[#000000] w-full h-screen">
           <ImageBackground
             source={require("@/assets/images/Image.png")}
             resizeMode="cover"
-            className="flex pt-[360px] h-full w-full"
+            className="flex pt-[350px] h-full"
           >
             <View className="flex items-center justify-center">
-              <Text className="text-white text-4xl font-body">
+              <Text className="text-white text-4xl font-pregular">
                 Done<Text className="text-[#60AA60]">With</Text>It
               </Text>
             </View>
-            <Text className="text-white font-gbold text-2xl pl-12 pt-8">
-              Sell to world wide market through Done
+            <Text className="text-white font-pregular text-2xl pl-6 pt-8">
+              Sell your unused materials to world wide market through Done
               <Text className="text-[#60AA60]">With</Text>It.
+            </Text>
+            <Text className="pl-6 text-white pt-5 text-md font-pregular">
+              DoneWithIt is a mobile app to help you sell your unwanted things,
+              those things you are obsessed with or you no longer use
             </Text>
             <View className="flex items-center">
               <TouchableOpacity className="flex justify-center items-center px-4 py-3 rounded-lg bg-[#60AA60]">
-                <Text className="text-white font-gbold">Join Community</Text>
+                <Text className="text-white text-lg font-pregular">Register Now</Text>
               </TouchableOpacity>
             </View>
           </ImageBackground>
