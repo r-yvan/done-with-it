@@ -1,3 +1,7 @@
+import { SafeAreaView } from "react-native-safe-area-context";
+import { useFonts } from "expo-font";
+import { Link } from "expo-router";
+import "../global.css";
 import {
   ScrollView,
   Text,
@@ -5,9 +9,6 @@ import {
   ImageBackground,
   TouchableOpacity,
 } from "react-native";
-import "../global.css";
-import { SafeAreaView } from "react-native-safe-area-context";
-import { useFonts } from "expo-font";
 export default function Index() {
   useFonts({
     "Poppins-Regular": require("@/assets/fonts/Poppins-Regular.ttf"),
@@ -38,11 +39,15 @@ export default function Index() {
               DoneWithIt is a mobile app to help you sell your unwanted things,
               those things you are obsessed with or you no longer use
             </Text>
-            <View className="flex items-center">
-              <TouchableOpacity className="flex justify-center items-center px-4 py-3 rounded-lg bg-[#60AA60]">
-                <Text className="text-white text-lg font-pregular">Register Now</Text>
-              </TouchableOpacity>
-            </View>
+            <Link href="/(auth)/sign-in">
+              <View className="flex items-center">
+                <TouchableOpacity className="flex justify-center items-center px-4 py-3 rounded-lg bg-[#60AA60]">
+                  <Text className="text-white text-lg font-pregular">
+                    Register Now
+                  </Text>
+                </TouchableOpacity>
+              </View>
+            </Link>
           </ImageBackground>
         </View>
       </ScrollView>

@@ -1,12 +1,17 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { SafeAreaView } from "react-native-safe-area-context";
+import { View, ScrollView, Text } from "react-native";
+import React from "react";
 
 const SignIn = () => {
   return (
-    <View>
-      <Text>SignIn</Text>
-    </View>
-  )
-}
+    <SafeAreaView>
+      <ScrollView>
+        <View>
+          
+        </View>
+      </ScrollView>
+    </SafeAreaView>
+  );
+};
 
-export default SignIn
+export default SignIn;
