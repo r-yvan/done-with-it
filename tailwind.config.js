@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Geist-Regular'],
+        body: ["Poppins"],
       },
     },
   },
