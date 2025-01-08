@@ -1,16 +1,23 @@
-import { Text, View } from "react-native";
+import { ScrollView, Image, Text, View } from "react-native";
 import "../global.css";
-import { Link } from "expo-router";
-import Entypo from "@expo/vector-icons/Entypo";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 export default function Index() {
   return (
-    <View className="bg-blue-300">
-      <Text className="font-body text-3xl">Dashboard</Text>
-      <Link href="/(tabs)/profile">Home</Link>
-      <View>
-        <Entypo name="link" size={24} color="black" />
-      </View>
-    </View>
+    <SafeAreaView>
+      <ScrollView>
+        <View className="flex justify-center items-center bg-[#151515] w-full h-full">
+          <Image
+            source={require("@/assets/images/Image.png")}
+            resizeMode="contain"
+          />
+          <View>
+            <Text className="text-white font-bold ">
+              Done<Text className="text-[#60AA60]">With</Text>It
+            </Text>
+          </View>
+        </View>
+      </ScrollView>
+    </SafeAreaView>
   );
 }
