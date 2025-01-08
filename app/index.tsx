@@ -24,13 +24,13 @@ export default function Index() {
                 Done<Text className="text-[#60AA60]">With</Text>It
               </Text>
             </View>
-            <Text className="text-white font-body text-2xl pl-12 pt-8">
+            <Text className="text-white font-gbold text-2xl pl-12 pt-8">
               Sell to world wide market through Done
               <Text className="text-[#60AA60]">With</Text>It.
             </Text>
             <View className="flex items-center">
-              <TouchableOpacity className="flex justify-center items-center px-2 py-1 bg-[#60AA60]">
-                <Text className="text-white font-body">Join Community</Text>
+              <TouchableOpacity className="flex justify-center items-center px-4 py-3 rounded-lg bg-[#60AA60]">
+                <Text className="text-white font-gbold">Join Community</Text>
               </TouchableOpacity>
             </View>
           </ImageBackground>
